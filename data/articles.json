@@ -1,0 +1,48 @@
+[
+  {
+    "id": 1,
+    "category": "Entertainment",
+    "title": "Here’s The Difference Between Used, Refurbished, Remarketed, And Rebuilt Electronic Equipment",
+    "imageSrc": "assets/images/oliur-rahman-272875.png",
+    "share": 275,
+    "views": 275,
+    "comments": 12
+  },
+  {
+    "id": 2,
+    "category": "Finance",
+    "title": "Optimize Your PC’s Performance With These 3 Programs",
+    "imageSrc": "assets/images/igor-son-285029.png",
+    "share": 275,
+    "views": 275,
+    "comments": 12
+  },
+
+  {
+    "id": 3,
+    "category": "Gaming",
+    "title": "Search Engine Optimization And Advertising",
+    "imageSrc": "assets/images/crew-22235.png",
+    "share": 275,
+    "views": 275,
+    "comments": 12
+  },
+  {
+    "id": 4,
+    "category": "Finance",
+    "title": "Unmatched Toner Cartridge Quality: 20% Less Than OEM Price",
+    "imageSrc": "assets/images/oliur-rahman-123819.png",
+    "share": 275,
+    "views": 275,
+    "comments": 12
+  },
+  {
+    "id": 5,
+    "category": "Technology",
+    "title": "Where To Find Unique Myspace Layouts",
+    "imageSrc": "assets/images/dose-media-344938.png",
+    "share": 275,
+    "views": 275,
+    "comments": 12
+  }
+]
