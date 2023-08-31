@@ -3,15 +3,6 @@ import { getSlideArticles, getNotableArticles, getArticles } from "./fetch.js";
 const $main = document.querySelector("main");
 const $section_slider = document.querySelector(".section-slider");
 
-const getArticleLimit = () => {
-  const screenWidth = window.screen.width;
-  // desktop: 5, tablet: 4, mobile: 2
-  if (screenWidth >= 1250) return 5;
-  if (screenWidth >= 721) return 4;
-  if (screenWidth <= 720) return 2;
-  else return 5;
-};
-
 const genArticleItems = (data, section = "") => {
   const availableSection = ["slide", "notable", ""];
   if (!availableSection.includes(section)) return false;
@@ -19,9 +10,8 @@ const genArticleItems = (data, section = "") => {
   const ignoreKeys = ["id", "imageSrc"];
   const infoKeys = ["share", "views", "comments"];
   return data.map((item, index) => {
-    const isDesktop = getArticleLimit() === 5;
     const isFirstArticle = section === "" && index === 0;
-    const large = isDesktop && isFirstArticle ? "large" : "";
+    const large = isFirstArticle ? "large" : "";
 
     const article = document.createElement("ARTICLE");
     article.classList.add("article");
@@ -58,7 +48,7 @@ const genArticleItems = (data, section = "") => {
 
 const slideData = await getSlideArticles();
 const notableData = await getNotableArticles();
-const articleData = await getArticles(getArticleLimit());
+const articleData = await getArticles();
 
 const slideItems = genArticleItems(slideData, "slide");
 const notableItems = genArticleItems(notableData, "notable");

@@ -132,10 +132,3 @@ main {
     display: none;
   }
 }
-
-@media only screen and (max-device-width: 720px) {
-  .article:nth-last-of-type(3),
-  .article:nth-last-of-type(1):not(.slide) {
-    display: flex;
-  }
-}

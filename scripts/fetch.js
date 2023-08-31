@@ -10,10 +10,10 @@ export const getNotableArticles = async () => {
   return result;
 };
 
-export const getArticles = async (limit) => {
+export const getArticles = async () => {
   const response = await fetch("data/articles.json");
   const result = await response.json();
-  return result.slice(0, limit);
+  return result;
 };
 
 export const getFeatured = async () => {
