@@ -54,12 +54,12 @@ footer > #subscribe {
   display: flex;
   flex-wrap: nowrap;
   height: 35px;
-  max-width: 200px;
+  max-width: 300px;
 }
 
 footer > #subscribe > input {
+  flex: 2 1 180px;
   min-width: 0;
-  flex: 1 1 180px;
   height: 100%;
   font-family: "Lato-Regular";
   font-size: 14px;
@@ -67,6 +67,7 @@ footer > #subscribe > input {
   border: none;
   color: var(--gray-dark);
   outline: none;
+  overflow: hidden;
 }
 
 footer > #subscribe > input::placeholder {
@@ -75,6 +76,7 @@ footer > #subscribe > input::placeholder {
 
 footer > #subscribe > button {
   flex: 1 1 120px;
+  min-width: 0;
   height: 100%;
   font-family: "Oswald-Medium";
   font-size: 12px;
@@ -84,7 +86,7 @@ footer > #subscribe > button {
   letter-spacing: 1.5px;
 }
 
-@media (min-width: 376px) and (max-width: 768px) {
+@media (min-width: 721px) and (max-width: 1250px) {
   footer {
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: 2fr 0.5fr 0.5fr 1fr 1fr;
@@ -108,7 +110,8 @@ footer > #subscribe > button {
 
   footer > .social {
     justify-self: start;
-    grid-column: 3 / 6;
+    grid-row: 3 / 4;
+    grid-column: 2 / 6;
   }
 
   footer > #subscribe {
@@ -118,17 +121,22 @@ footer > #subscribe > button {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 720px) {
   footer {
-    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 1.2fr;
+    grid-template-rows: 0.4fr 0.5fr 0.5fr 0.5fr 1.4fr;
     grid-template-columns: 1fr;
+    gap: 10px;
     align-items: center;
     height: 450px;
-    padding: 20px;
+    padding: 30px 20px;
   }
 
   footer > .logo {
     margin-top: auto;
+  }
+
+  footer > .info {
+    margin-bottom: auto;
   }
 
   footer > nav.navigation {

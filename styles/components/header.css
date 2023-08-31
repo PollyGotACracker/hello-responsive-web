@@ -61,7 +61,7 @@ button.header-menu > .header-menu-icon:after {
   top: 6px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1250px) {
   header {
     padding: 20px;
   }
@@ -82,6 +82,6 @@ button.header-menu > .header-menu-icon:after {
   }
 
   header > nav.navigation.active {
-    transform: translateX(200px);
+    transform: translateX(0px);
   }
 }

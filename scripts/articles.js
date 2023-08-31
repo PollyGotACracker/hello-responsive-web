@@ -6,9 +6,9 @@ const $section_slider = document.querySelector(".section-slider");
 const getArticleLimit = () => {
   const screenWidth = window.screen.width;
   // desktop: 5, tablet: 4, mobile: 2
-  if (screenWidth >= 1445) return 5;
-  if (screenWidth >= 768) return 4;
-  if (screenWidth >= 375) return 2;
+  if (screenWidth >= 1250) return 5;
+  if (screenWidth >= 721) return 4;
+  if (screenWidth <= 720) return 2;
   else return 5;
 };
 

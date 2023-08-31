@@ -24,7 +24,6 @@
 
 .section-featured > .contents > .featured-item {
   display: flex;
-  gap: 20px;
   border-bottom: 1px solid var(--gray-light30);
   padding: 30px;
   font-size: 18px;
