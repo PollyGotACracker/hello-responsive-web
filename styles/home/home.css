@@ -5,7 +5,7 @@ main {
   display: grid;
   grid-auto-flow: column;
   justify-content: center;
-  grid-template-rows: repeat(4, minmax(300px, 1fr));
+  grid-template-rows: repeat(4, minmax(300px, max-content));
   grid-template-columns: repeat(4, minmax(270px, 1fr));
   gap: 30px;
   align-content: center;
@@ -16,7 +16,7 @@ main {
 
 @media (min-width: 721px) and (max-width: 1250px) {
   main {
-    grid-template-rows: 1.5fr 0.8fr 0.8fr 1fr 0.8fr;
+    grid-template-rows: 1.8fr 0.8fr 0.8fr 1fr 0.8fr;
     grid-template-columns: 1fr 5% 5% 1fr;
     gap: 20px;
     padding-left: 20px;
@@ -74,7 +74,7 @@ main {
 
 @media (max-width: 720px) {
   main {
-    grid-template-rows: 1.2fr 1.5fr 0.8fr 1.5fr 0.8fr;
+    grid-template-rows: 500px repeat(4, minmax(300px, max-content));
     grid-template-columns: 1fr;
     gap: 20px;
     padding-left: 20px;
@@ -119,11 +119,6 @@ main {
 
   .section-featured {
     grid-row: 2 / 3;
-  }
-
-  .section-featured > .contents > .featured-item {
-    padding-top: 20px;
-    padding-bottom: 20px;
   }
 
   .article.large,
