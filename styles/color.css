@@ -1,0 +1,15 @@
+:root {
+  --primary: #ff565c;
+  --white: #ffffff;
+  --white-alpha30: #ffffff4d;
+  --white-alpha70: #ffffffb3;
+  --gray-light10: #f9fafc;
+  --gray-light10-alpha20: #f9fafc33;
+  --gray-light20: #f2f2f2;
+  --gray-light30: #f2f3f6;
+  --gray-light40: #ebebeb;
+  --gray-dark: #1d1f24;
+  --gray-dark-alpha20: #1d1f2433;
+  --gray-dark-alpha40: #1d1f2466;
+  --black: #000000;
+}

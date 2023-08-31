@@ -1,0 +1,14 @@
+@import "articles.css";
+@import "featured.css";
+
+main {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: repeat(4, minmax(300px, 1fr));
+  grid-template-columns: repeat(4, minmax(270px, 1fr));
+  gap: 30px;
+  align-content: center;
+  padding-left: calc((100% - (1010px + 310px)) / 2);
+  padding-right: calc((100% - (1010px + 310px)) / 2);
+  background: var(--gray-light10);
+}

@@ -3,14 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
     <title>Deck</title>
+    <link href="styles/global.css" rel="stylesheet" />
+    <link href="styles/home/home.css" rel="stylesheet" />
   </head>
   <body>
     <header>
@@ -24,12 +19,18 @@
         <a href="#finance">Finance</a>
         <a href="#entertainment">Entertainment</a>
       </nav>
-      <button type="button" class="header-menu">menu</button>
+      <button type="button" class="header-menu" title="header menu">
+        <div class="header-menu-icon"></div>
+      </button>
     </header>
     <main>
       <section class="section-slider">
-        <button type="button" class="slider-left">left</button>
-        <button type="button" class="slider-right">right</button>
+        <button type="button" class="slider-left" title="slider left">
+          <img src="assets/icons/arrow_left.svg" title="slider left" />
+        </button>
+        <button type="button" class="slider-right" title="slider right">
+          <img src="assets/icons/arrow_right.svg" title="slider right" />
+        </button>
       </section>
       <section class="section-featured">
         <div class="title">Featured Stories</div>
@@ -53,10 +54,18 @@
       </nav>
       <div class="social">
         <div>Follow us:</div>
-        <a class="instagram"></a>
-        <a class="pinterest"></a>
-        <a class="twitter"></a>
-        <a class="facebook"></a>
+        <a href="#instagram" class="instagram">
+          <img src="assets/icons/instagram.svg" title="instagram" />
+        </a>
+        <a href="#pinterest" class="pinterest">
+          <img src="assets/icons/pinterest.svg" title="pinterest" />
+        </a>
+        <a href="#twitter" class="twitter">
+          <img src="assets/icons/twitter.svg" title="twitter" />
+        </a>
+        <a href="#facebook" class="facebook">
+          <img src="assets/icons/facebook.svg" title="facebook" />
+        </a>
       </div>
       <form id="subscribe">
         <input
