@@ -18,9 +18,15 @@ const genArticleItems = (data, section = "") => {
 
   const ignoreKeys = ["id", "imageSrc"];
   const infoKeys = ["share", "views", "comments"];
-  return data.map((item) => {
+  return data.map((item, index) => {
+    const isDesktop = getArticleLimit() === 5;
+    const isFirstArticle = section === "" && index === 0;
+    const large = isDesktop && isFirstArticle ? "large" : "";
+
     const article = document.createElement("ARTICLE");
-    article.className = `article ${section}`;
+    article.classList.add("article");
+    if (section !== "") article.classList.add(section);
+    if (large !== "") article.classList.add(large);
     const footer = document.createElement("DIV");
     footer.className = "footer";
 
