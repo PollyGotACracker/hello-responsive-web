@@ -22,6 +22,14 @@
 - 다른 특정 어플리케이션에 종속되지 않는 브라우저
 - Chrome, Safari, FireFox, Samsung Internet Browser 등 일반적인 독립형(설치형) 브라우저 앱
 
+## 화면 설계
+
+- 레이아웃 시안을 보고 각 요소별 그룹핑을 해야 한다.
+- header, main, footer  
+  => header, (key-visual, story, card, reading...), footer
+- 새로운 속성 적용 시, [caniuse.com](https://caniuse.com/) 에서 MDN 페이지를 체크한다.
+- header 영역은 `position: fixed;`, `top: 0;` 을 적용하여 스크롤 시 항상 상단에 있도록 한다.
+
 ## 프론트엔드 개발자의 구분
 
 - UI 개발자: 화면 구성, 컬러, 위치, 사용성
