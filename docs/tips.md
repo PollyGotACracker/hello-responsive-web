@@ -10,13 +10,6 @@
 - flexible한 백그라운드는 `<img>` 태그로 다루기에 복잡하기 때문에 `<div>` 태그 및 `background` 속성을 사용하는 것이 낫다.  
   `<img>` 태그를 사용해야 한다면 `object-fit` 속성을 사용한다.
 
-## 최적화
-
-- `will-change`: 애니메이션 사용 시 바뀌게 될 속성을 지정  
-  브라우저가 준비할 수 있어(GPU에 미리 할당) 애니메이션이 좀 더 부드럽게 적용된다.
-- `transition-property`: transition 을 적용할 속성 지정  
-  transition 을 모든 속성에 적용하면 각 layer 를 전부 준비하므로 성능에 좋지 않다.
-
 ## Flexbox & Grid
 
 - flex item 에 `order` 속성을 사용하여 해당 요소의 순서를 변경할 수 있다.

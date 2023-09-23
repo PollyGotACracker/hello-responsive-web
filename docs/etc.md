@@ -29,6 +29,7 @@
 
 ## Cross Browser
 
+- [StatCounter](https://gs.statcounter.com/): 브라우저 점유율 확인
 - Auto Prefixer 는 실무에서 간혹 쓰기도 한다.
 - android 에서 웹화면이 잘 보인다면 ios에서 깨질 일은 거의 없을 것이다.
 
@@ -38,7 +39,14 @@
 - 회사에서 요구하는 경우는 별로 없다. 한국 웹 접근성 문서를 읽어보면 좋다.
 - button 태그에 `name` 속성이 없다면 스크린리더기는 '버튼' 이라고만 읽어주게 된다.  
   (`name` 속성을 사용한다면 `aria-label` 을 굳이 쓰지 않아도 된다)
+- hover 효과는 글자 색상을 바꾸는 것보다 밑줄이 더 좋다.  
+  (링크임을 직관적으로 알 수 있고, 접근성 측면에서 더 좋다)
+- tab 했을 때 요소 가장자리에 생기는 `outline` 을 없애지 않는다.
 
 ## 레이아웃 설계 참고
 
 - 'free website template' 키워드 + 'figma', 'psd'...
+
+## min-width
+
+- `min-width: 320px`, 갤럭시 폴드 고려: `min-width: 270px`
