@@ -7,7 +7,7 @@
 
 ## 사전 과제
 
-- [https://pollygotacracker.github.io/hello-responsive-web/](https://pollygotacracker.github.io/hello-responsive-web/)
+- [https://pollygotacracker.github.io/wanted-responsive-web/](https://pollygotacracker.github.io/wanted-responsive-web/)
 
 ## 유용한 사이트
 
